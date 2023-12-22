@@ -1,0 +1,40 @@
+h1{
+   
+font-family: 'Pacifico', cursive;
+    position: relative;
+    
+}
+h1::after{
+    content: '';
+    height: 10px;
+    width: 250px;
+    background-color: blueviolet;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    transition: all 1s;
+}
+
+ header:hover h1::after{
+    height: 30px;
+}
+h1:hover {
+    font-weight: 900;
+   
+}
+.btn-p{
+    background-color: blueviolet;
+    color: #fff;
+    padding-inline: 15px;
+    width: 15%;
+    
+
+    transition: all 1s;
+}
+
+.btn-p:hover{
+    background-color: rgb(65, 19, 108);
+}

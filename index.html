@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK MARK</title>
+    <link rel="shortcut icon" href="mark.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-black text-bg-dark">
+    <header class="text-center text-capitalize py-4">
+    <h1>book marker</h1>
+    </header>
+    <section class="w-75 mx-auto text-capitalize p-3">
+<label for="siteName" ><i class="fa-regular fa-bookmark"></i> site name</label>
+<input  type="text" id="siteName" placeholder="" class="form-control ">
+<label for="url"><i class="fa-solid fa-link"></i> url</label>
+<input  type="text" id="url" class="form-control ">
+<div class="text-center my-3">
+<button  onclick="addSite()"  class=" btn-p  border-0 rounded-pill my-2 text-center text-capitalize py-2">save</button>
+<div id="alert" class="alert alert-danger text-start text-capitalize d-none "><i class="fa-solid fa-circle-exclamation"></i><br>all inputs is empty <br> please enter your site name and url </div>
+    
+
+ 
+</div>
+</div>
+    </section >
+    <section class="w-75 mx-auto text-capitalize p-3">
+        <table class="text-light table w-100  text-center">
+            <thead>
+               <tr>
+                <th>index</th>
+                <th>website name</th>
+                <th>visit</th>
+                <th>delet</th>
+               </tr>
+            </thead>
+            <tbody id="tb">
+
+            </tbody>
+        </table>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/d2fec728f6.js" crossorigin="anonymous"></script>
+    <script src="js/typed.umd.js"></script>
+    <script>  var typed4 = new Typed('#siteName', {
+        strings: ['Web site name','For Example...' ,'facebook', 'youtube','linked in'],
+        typeSpeed: 40,
+        backSpeed: 40,
+        attr: 'placeholder',
+        bindInputFocusEvents: true,
+        loop: true
+      });
+      var typed4 = new Typed('#url', {
+        strings: ['http...','www.  ','An link from browser'],
+        typeSpeed: 40,
+        backSpeed: 40,
+        attr: 'placeholder',
+        bindInputFocusEvents: true,
+        loop: true
+      });
+      
+      </script>
+</body>
+</html>
